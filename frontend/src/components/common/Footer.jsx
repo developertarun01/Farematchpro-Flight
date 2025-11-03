@@ -35,8 +35,8 @@ const Footer = () => {
 
               <p>
                 <input type="checkbox" defaultChecked /> I would like to receive
-                email from farematchpro.online with the latest offers and promotions.
-                See our privacy policy
+                email from farematchpro.online with the latest offers and
+                promotions. See our privacy policy
               </p>
 
               <p>
@@ -71,10 +71,14 @@ const Footer = () => {
                 <strong>ABOUT</strong>
               </p>
               <p>
-                <Link to="https://farematchpro.online/about.html">About Us</Link>
+                <Link to="https://farematchpro.online/about.html">
+                  About Us
+                </Link>
               </p>
               <p>
-                <Link to="https://farematchpro.online/contact.html">Contact Us</Link>
+                <Link to="https://farematchpro.online/contact.html">
+                  Contact Us
+                </Link>
               </p>
               <p>
                 <Link to="/sitemap">Site Map</Link>
@@ -110,7 +114,9 @@ const Footer = () => {
                 <strong>TRAVEL TOOLS</strong>
               </p>
               <p>
-                <a href="https://farematchpro.online/contact.html">Customer Support</a>
+                <a href="https://farematchpro.online/contact.html">
+                  Customer Support
+                </a>
               </p>
               <p>
                 <a href="">Online Check-in</a>
@@ -134,10 +140,14 @@ const Footer = () => {
                 <strong>LEGAL</strong>
               </p>
               <p>
-                <a href="https://farematchpro.online/privacy.html">Privacy Policy</a>
+                <a href="https://farematchpro.online/privacy.html">
+                  Privacy Policy
+                </a>
               </p>
               <p>
-                <a href="https://farematchpro.online/hotel-policies.html">Terms & Conditions</a>
+                <a href="https://farematchpro.online/hotel-policies.html">
+                  Terms & Conditions
+                </a>
               </p>
               <p>
                 <a href="">Taxes & Fees</a>
@@ -190,11 +200,11 @@ const Footer = () => {
 
           <p className="mt-40 mb-10">
             Farematchpro is an independent travel portal with no third party
-            association. By using farematchpro.online, you agree that Farematchpro is not
-            accountable for any loss - direct or indirect, arising of offers,
-            materials or links to other sites found on this website. In case of
-            queries, reach us directly at our Contact Number +1-888-728-8984 or,
-            simply email at contact@farematchpro.online
+            association. By using farematchpro.online, you agree that
+            Farematchpro is not accountable for any loss - direct or indirect,
+            arising of offers, materials or links to other sites found on this
+            website. In case of queries, reach us directly at our Contact Number
+            +1-888-728-8984 or, simply email at contact@farematchpro.online
           </p>
         </div>
       </footer>
@@ -245,12 +255,14 @@ const Footer = () => {
         </div>
       </section>
 
-      <div className="sm:hidden fixed bottom-0 w-full bg-[var(--accent-dark)] text-white text-center h-14 flex justify-center items-center gap-2 text-xl">
-        <span>
-          <i className="fa-solid fa-phone-volume fa-shake fa-sm text-white"></i>
-        </span>
-        <b>Call Now</b>
-      </div>
+      <Link to="tel:8887288984">
+        <div className="sm:hidden fixed bottom-0 w-full bg-[var(--accent-dark)] text-white text-center h-14 flex justify-center items-center gap-2 text-xl">
+          <span>
+            <i className="fa-solid fa-phone-volume fa-shake fa-sm text-white"></i>
+          </span>
+          <b>Call Now</b>
+        </div>
+      </Link>
     </>
   );
 };
