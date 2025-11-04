@@ -14,8 +14,8 @@ import {
 const BookingSummary = ({ booking, onProceedToPayment }) => {
   if (!booking) return null;
 
-  console.log("Booking data:", booking);
-  console.log("Booking details:", booking.details);
+  // console.log("Booking data:", booking);
+  // console.log("Booking details:", booking.details);
 
   const renderBookingDetails = () => {
     switch (booking.type) {

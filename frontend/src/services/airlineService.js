@@ -8,7 +8,7 @@ class AirlineService {
 
   async getAirlineName(airlineCode) {
     if (!airlineCode) {
-      console.log('❌ No airline code provided');
+      // console.log('❌ No airline code provided');
       return 'Flight';
     }
 
@@ -18,18 +18,18 @@ class AirlineService {
     }
 
     try {
-      console.log('🛫 Fetching airline name for code:', airlineCode);
+      // console.log('🛫 Fetching airline name for code:', airlineCode);
       
       const response = await api.get(`/travel/airlines?code=${airlineCode}`);
-      console.log('🛫 Airline API response:', response);
+      // console.log('🛫 Airline API response:', response);
       
       if (response.success && response.data && response.data.name) {
         const airlineName = response.data.name;
         this.airlineCache.set(airlineCode, airlineName);
-        console.log('✅ Found airline name:', airlineName);
+        // console.log('✅ Found airline name:', airlineName);
         return airlineName;
       } else {
-        console.log('❌ No airline name in response, using fallback');
+        // console.log('❌ No airline name in response, using fallback');
         return this.getAirlineNameFromStaticMap(airlineCode);
       }
     } catch (error) {
@@ -40,21 +40,21 @@ class AirlineService {
 
   // Enhanced flight processing with debugging
   async enhanceFlightsWithAirlineNames(flights) {
-    console.log('🔄 Enhancing flights with airline names, count:', flights.length);
+    // console.log('🔄 Enhancing flights with airline names, count:', flights.length);
     
     const enhancedFlights = [];
     
     for (const [index, flight] of flights.entries()) {
-      console.log(`🔍 Processing flight ${index + 1}:`, {
-        id: flight.id,
-        validatingAirlineCodes: flight.validatingAirlineCodes,
-        operating: flight.operating,
-        carrierCode: flight.carrierCode,
-        flightNumber: flight.flightNumber
-      });
+      // console.log(`🔍 Processing flight ${index + 1}:`, {
+      //   id: flight.id,
+      //   validatingAirlineCodes: flight.validatingAirlineCodes,
+      //   operating: flight.operating,
+      //   carrierCode: flight.carrierCode,
+      //   flightNumber: flight.flightNumber
+      // });
       
       const airlineCode = this.getAirlineCodeFromFlight(flight);
-      console.log(`📋 Extracted airline code: "${airlineCode}"`);
+      // console.log(`📋 Extracted airline code: "${airlineCode}"`);
       
       const airlineName = await this.getAirlineName(airlineCode);
       
@@ -64,15 +64,15 @@ class AirlineService {
         displayName: `${airlineName} ${flight.flightNumber || ''}`.trim()
       };
       
-      console.log(`✅ Enhanced flight ${index + 1}:`, {
-        airlineName: enhancedFlight.airlineName,
-        displayName: enhancedFlight.displayName
-      });
+      // console.log(`✅ Enhanced flight ${index + 1}:`, {
+      //   airlineName: enhancedFlight.airlineName,
+      //   displayName: enhancedFlight.displayName
+      // });
       
       enhancedFlights.push(enhancedFlight);
     }
     
-    console.log('🎉 All flights enhanced:', enhancedFlights);
+    // console.log('🎉 All flights enhanced:', enhancedFlights);
     return enhancedFlights;
   }
 
@@ -83,7 +83,7 @@ class AirlineService {
       flight.carrierCode ||
       ''
     );
-    console.log('🔍 Extracted airline code from flight:', code);
+    // console.log('🔍 Extracted airline code from flight:', code);
     return code;
   }
 
@@ -110,7 +110,7 @@ class AirlineService {
     };
     
     const name = airlineMap[airlineCode] || airlineCode || 'Flight';
-    console.log(`🗺️ Static map result for ${airlineCode}: ${name}`);
+    // console.log(`🗺️ Static map result for ${airlineCode}: ${name}`);
     return name;
   }
 }

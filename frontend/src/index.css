@@ -230,7 +230,6 @@ body {
 }
 
 @media (max-width: 655px) {
-
   .header {
     justify-content: center;
   }
@@ -341,13 +340,13 @@ body {
 .section1 {
   /* height: 70vh; */
   /* background: linear-gradient(to bottom, transparent 70%, var(--text-light) 30%),
-    url("/images/beach6.jpg") center/cover no-repeat; */
+    url("/flights/images/beach6.jpg") center/cover no-repeat; */
   /* background: linear-gradient(
       to bottom,
       transparent calc(50% - 1px),
       var(--text-light) 50%
     ),
-    url("/images/beach6.jpg") center/cover no-repeat; */
+    url("/flights/images/beach6.jpg") center/cover no-repeat; */
 }
 
 .all-forms {
@@ -790,32 +789,33 @@ input[type="tel"] {
 
 .section2-card-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    /* black overlay */ url("/images/plane1.jpg") center/cover no-repeat;
+    /* black overlay */ url("/flights/images/plane1.jpg") center/cover no-repeat;
 }
 
 .section2-card-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    /* black overlay */ url("/images/plane2.jpg") center/cover no-repeat;
+    /* black overlay */ url("/flights/images/plane2.jpg") center/cover no-repeat;
 }
 
 .section2-card-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    /* black overlay */ url("/images/plane3.jpg") center/cover no-repeat;
+    /* black overlay */ url("/flights/images/plane3.jpg") center/cover no-repeat;
 }
 
 .section2-card-4 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    /* black overlay */ url("/images/plane4.jpg") center/cover no-repeat;
+    /* black overlay */ url("/flights/images/plane4.jpg") center/cover no-repeat;
 }
 
 .section2-card-5 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    /* black overlay */ url("/images/plane5.jpg") center/cover no-repeat;
+    /* black overlay */ url("/flights/images/plane5.jpg") center/cover no-repeat;
 }
 
 .section2-card-6 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    /* black overlay */ url("/images/bg-plane.jpg") center/cover no-repeat;
+    /* black overlay */ url("/flights/images/bg-plane.jpg") center/cover
+      no-repeat;
 }
 
 .section2-card-bottom-right {
@@ -855,12 +855,14 @@ input[type="tel"] {
 
 .section3-header-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    /* black overlay */ url("/images/building3.jpg") center/cover no-repeat;
+    /* black overlay */ url("/flights/images/building3.jpg") center/cover
+      no-repeat;
 }
 
 .section3-header-2 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    /* black overlay */ url("/images/building4.jpg") center/cover no-repeat;
+    /* black overlay */ url("/flights/images/building4.jpg") center/cover
+      no-repeat;
 }
 
 .section3-list {
@@ -948,19 +950,19 @@ input[type="tel"] {
 }
 
 .card-image-1 {
-  background: url(/images/family1.jpg) center/cover no-repeat;
+  background: url(/flights/images/family1.jpg) center/cover no-repeat;
 }
 
 .card-image-2 {
-  background: url(/images/family2.jpg) center/cover no-repeat;
+  background: url(/flights/images/family2.jpg) center/cover no-repeat;
 }
 
 .card-image-3 {
-  background: url(/images/family3.jpg) center/cover no-repeat;
+  background: url(/flights/images/family3.jpg) center/cover no-repeat;
 }
 
 .card-image-4 {
-  background: url(/images/family4.jpg) center/cover no-repeat;
+  background: url(/flights/images/family4.jpg) center/cover no-repeat;
 }
 
 .view-more {
@@ -990,12 +992,12 @@ input[type="tel"] {
 /* Section 6 */
 .section3-header-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    /* black overlay */ url("/images/hotel1.jpg") center/cover no-repeat;
+    /* black overlay */ url("/flights/images/hotel1.jpg") center/cover no-repeat;
 }
 
 .section3-header-4 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    /* black overlay */ url("/images/hotel2.jpg") center/cover no-repeat;
+    /* black overlay */ url("/flights/images/hotel2.jpg") center/cover no-repeat;
 }
 
 /* section 7 */

@@ -13,7 +13,7 @@ const TestAmadeusConnection = () => {
     try {
       const results = await airportSearchService.searchLocations(query);
       setTestResults(results);
-      console.log('API Test Results:', results);
+      // console.log('API Test Results:', results);
     } catch (error) {
       console.error('API Test Error:', error);
       setTestResults({ error: error.message });

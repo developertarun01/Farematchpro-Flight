@@ -421,11 +421,11 @@ const PopularAirline = ({ props }) => {
       }
     });
 
-    console.log(
-      `Fallback: Nearest major city is ${nearestCity.name} (${
-        nearestCity.code
-      }) - ${shortestDistance.toFixed(1)} km`
-    );
+    // console.log(
+    //   `Fallback: Nearest major city is ${nearestCity.name} (${
+    //     nearestCity.code
+    //   }) - ${shortestDistance.toFixed(1)} km`
+    // );
     return nearestCity.code;
   };
 
@@ -455,9 +455,9 @@ const PopularAirline = ({ props }) => {
         );
 
         if (validAirport) {
-          console.log(
-            `Aviation API found: ${validAirport.iata_code} - ${validAirport.airport_name}`
-          );
+          // console.log(
+          //   `Aviation API found: ${validAirport.iata_code} - ${validAirport.airport_name}`
+          // );
           return validAirport.iata_code;
         }
       }
@@ -476,7 +476,7 @@ const PopularAirline = ({ props }) => {
     try {
       // Step 1: Get user's current location
       const location = await getUserLocation();
-      console.log("User location:", location);
+      // console.log("User location:", location);
 
       // Step 2: Convert location to nearest airport code
       const originAirport = await getNearestAirport(

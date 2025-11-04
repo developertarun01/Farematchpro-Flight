@@ -208,7 +208,7 @@ const ThankYou = () => {
 
   const handleSendEmailAutomatically = async () => {
     setIsSendingEmail(true);
-    console.log("Starting automatic email sending process...");
+    // console.log("Starting automatic email sending process...");
 
     try {
       // Generate PDF
@@ -238,11 +238,11 @@ const ThankYou = () => {
         (typeof process !== "undefined" && process.env.REACT_APP_API_URL) ||
         "https://complete-travel-solution-api.vercel.app";
 
-      console.log("Using API Base URL:", API_BASE_URL);
-      console.log(
-        "Full API endpoint:",
-        `${API_BASE_URL}/api/send-receipt-email`
-      );
+      // console.log("Using API Base URL:", API_BASE_URL);
+      // console.log(
+      //   "Full API endpoint:",
+      //   `${API_BASE_URL}/api/send-receipt-email`
+      // );
 
       const emailPromises = emailRecipients.map(async (recipient) => {
         try {
@@ -251,7 +251,7 @@ const ThankYou = () => {
             [recipient.type]: "sending",
           }));
 
-          console.log(`Sending email to: ${recipient.to}`);
+          // console.log(`Sending email to: ${recipient.to}`);
 
           const emailData = {
             to: [recipient.to],
@@ -286,10 +286,10 @@ const ThankYou = () => {
           }
 
           const result = await response.json();
-          console.log("Success response:", result);
+          // console.log("Success response:", result);
 
           if (result.success) {
-            console.log(`✅ Email sent successfully to: ${recipient.to}`);
+            // console.log(`✅ Email sent successfully to: ${recipient.to}`);
             setEmailProgress((prev) => ({
               ...prev,
               [recipient.type]: "sent",
@@ -321,7 +321,7 @@ const ThankYou = () => {
 
       if (allEmailsSent) {
         setEmailSent(true);
-        console.log("✅ All emails sent successfully!");
+        // console.log("✅ All emails sent successfully!");
       } else {
         const failedCount = results.filter((r) => !r.value?.success).length;
         console.warn(`${failedCount} emails failed to send`);

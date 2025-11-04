@@ -7,7 +7,7 @@
       : 'http://localhost:5000/api'
     );
 
-  console.log('API Base URL:', API_BASE_URL);
+  // console.log('API Base URL:', API_BASE_URL);
 
   // Create axios instance with default config
   const api = axios.create({
@@ -21,7 +21,7 @@
   // Add request interceptor for logging
   api.interceptors.request.use(
     (config) => {
-      console.log(`Making ${config.method?.toUpperCase()} request to: ${config.url}`);
+      // console.log(`Making ${config.method?.toUpperCase()} request to: ${config.url}`);
       return config;
     },
     (error) => {

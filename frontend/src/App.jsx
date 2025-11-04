@@ -30,12 +30,13 @@ function NavigationHandler() {
     }
   }, [location, navigationType]);
 
-  return loading;
+  return loading ? <div className="page-loading-overlay">Loading…</div> : null;
 }
 
 function App() {
+  const base = import.meta.env.BASE_URL || "/flights/";
   return (
-    <Router>
+    <Router basename={base}>
       <div className="App flex flex-col min-h-screen bg-gray-50">
         <Navbar />
         <main className="flex-grow">
@@ -48,6 +49,7 @@ function App() {
             <Route path="/booking" element={<Booking />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </main>
         <Footer />

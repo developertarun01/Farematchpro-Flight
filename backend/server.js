@@ -16,7 +16,8 @@ const PORT = process.env.PORT || 5000;
 const corsOptions = {
   origin: [
     'http://localhost:5173',
-    'https://farematchpro-flight.vercel.app'
+    'https://farematchpro-flight.vercel.app',
+    'https://farematchpro.online'
   ],
   credentials: true,
   optionsSuccessStatus: 200

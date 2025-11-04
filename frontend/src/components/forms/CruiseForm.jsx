@@ -119,7 +119,7 @@ const CruiseForm = () => {
       try {
         setApiLoading((prev) => ({ ...prev, ports: true }));
         apiResults = await searchPortsAPI(query);
-        console.log(`API returned ${apiResults.length} port results`);
+        // console.log(`API returned ${apiResults.length} port results`);
       } catch (error) {
         console.error(
           "Backend API search failed, using local data only:",

@@ -76,8 +76,8 @@ const AirportDropdownContainer = () => {
 
   // Debug: Log the grouped structure
   React.useEffect(() => {
-    console.log('Grouped suggestions:', groupedSuggestions);
-    console.log('Original suggestions:', suggestions);
+    // console.log('Grouped suggestions:', groupedSuggestions);
+    // console.log('Original suggestions:', suggestions);
   }, [groupedSuggestions, suggestions]);
 
   return (

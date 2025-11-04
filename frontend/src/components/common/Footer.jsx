@@ -215,34 +215,34 @@ const Footer = () => {
           <div className="section9-icons">
             <div className="section9-icons-1">
               <img
-                src="/images/IATA.webp"
+                src={`${import.meta.env.BASE_URL}flights/images/IATA.webp`}
                 alt="IATA"
                 style={{ width: "100%", height: "40px" }}
               />
               <img
-                src="/images/arc.png"
+                src={`${import.meta.env.BASE_URL}flights/images/arc.png`}
                 alt="ARC"
                 style={{ width: "100%", height: "40px" }}
               />
               <img
-                src="/images/cloudflare.webp"
+                src={`${import.meta.env.BASE_URL}flights/images/cloudflare.webp`}
                 alt="Cloudflare"
                 style={{ width: "100%", height: "40px" }}
               />
               <img
-                src="/images/digicert.webp"
+                src={`${import.meta.env.BASE_URL}flights/images/digicert.webp`}
                 alt="Digicert"
                 style={{ width: "100%", height: "40px" }}
               />
               <img
-                src="/images/PCI.webp"
+                src={`${import.meta.env.BASE_URL}flights/images/PCI.webp`}
                 alt="PCI"
                 style={{ width: "100%", height: "40px" }}
               />
             </div>
             <div>
               <img
-                src="/images/payment.png"
+                src={`${import.meta.env.BASE_URL}flights/images/payment.png`}
                 alt="Payments"
                 style={{ width: "100%" }}
               />

@@ -8,22 +8,22 @@ class AirportSearchService {
         return [];
       }
 
-      console.log('🔍 Searching locations for:', query);
+      // console.log('🔍 Searching locations for:', query);
 
       // Try real Amadeus API first
       const amadeusResults = await this.searchAmadeus(query);
 
       if (amadeusResults && amadeusResults.length > 0) {
-        console.log('✅ Found real Amadeus data:', amadeusResults.length, 'results');
+        // console.log('✅ Found real Amadeus data:', amadeusResults.length, 'results');
         return amadeusResults;
       }
 
       // Fallback to mock data
-      console.log('📋 Using mock data as fallback');
+      // console.log('📋 Using mock data as fallback');
       return this.getMockLocations(query);
     } catch (error) {
       console.error('❌ Airport search error:', error);
-      console.log('📋 Falling back to mock data due to error');
+      // console.log('📋 Falling back to mock data due to error');
       return this.getMockLocations(query);
     }
   }
@@ -31,12 +31,12 @@ class AirportSearchService {
   // Real Amadeus API call
   async searchAmadeus(query) {
     try {
-      console.log('🌐 Making real API call to backend for:', query);
+      // console.log('🌐 Making real API call to backend for:', query);
 
       const response = await api.get(`/travel/airports?q=${encodeURIComponent(query)}`);
 
       if (response.success && response.data) {
-        console.log('✅ Backend API call successful');
+        // console.log('✅ Backend API call successful');
         return response.data;
       } else {
         throw new Error('Invalid response format from backend');

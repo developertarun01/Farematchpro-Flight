@@ -4,7 +4,7 @@ import api from './api';
 // Search ports via backend API
 export const searchPortsAPI = async (query) => {
   try {
-    console.log(`Searching ports for: "${query}"`);
+    // console.log(`Searching ports for: "${query}"`);
     const response = await api.post('/search/ports', { query });
     
     // Check if response has data array
@@ -28,7 +28,7 @@ export const searchPortsAPI = async (query) => {
 // Search cruise lines via backend API
 export const searchCruiseLinesAPI = async (query) => {
   try {
-    console.log(`Searching cruise lines for: "${query}"`);
+    // console.log(`Searching cruise lines for: "${query}"`);
     const response = await api.post('/search/cruise-lines', { query });
     
     if (response && Array.isArray(response.data)) {
@@ -50,7 +50,7 @@ export const searchCruiseLinesAPI = async (query) => {
 // Search ships via backend API
 export const searchShipsAPI = async (query) => {
   try {
-    console.log(`Searching ships for: "${query}"`);
+    // console.log(`Searching ships for: "${query}"`);
     const response = await api.post('/search/ships', { query });
     
     if (response && Array.isArray(response.data)) {

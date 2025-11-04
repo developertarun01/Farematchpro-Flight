@@ -249,5 +249,5 @@ setTimeout(() => {
         roomSelectHotel.addEventListener('change', updatePassengerHeaderHotel);
     }
 
-    console.log("ALL WORKING !!!");
+    // console.log("ALL WORKING !!!");
 }, 500);

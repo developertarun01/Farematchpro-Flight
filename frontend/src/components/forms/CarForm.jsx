@@ -118,14 +118,14 @@ const CarForm = () => {
     };
 
     // Console log the data being sent
-    console.log("=== CAR SEARCH FORM DATA ===");
-    console.log("Raw Form Data:", formData);
-    console.log("API Payload:", apiData);
-    console.log("=== END FORM DATA ===");
+    // console.log("=== CAR SEARCH FORM DATA ===");
+    // console.log("Raw Form Data:", formData);
+    // console.log("API Payload:", apiData);
+    // console.log("=== END FORM DATA ===");
 
     // Mock API call simulation
-    console.log("📡 Mock API Call to Car Rental API...");
-    console.log("Parameters:", apiData);
+    // console.log("📡 Mock API Call to Car Rental API...");
+    // console.log("Parameters:", apiData);
 
     navigate("/results", {
       state: {

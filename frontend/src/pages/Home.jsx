@@ -16,7 +16,7 @@ const Home = () => {
       id: "flights",
       label: "Flights",
       icon: Plane,
-      bgImage: "/images/bg-plane.jpg",
+      bgImage: `${import.meta.env.BASE_URL}flights/images/bg-plane.jpg`,
     }
   ];
 
@@ -237,7 +237,7 @@ const Home = () => {
           <div className="good-cards row flex-mine">
             <div className="good-card-1 col flex-mine-column px-5 text-center ">
               <img
-                src="/images/flexpay-logo.webp"
+                src={`${import.meta.env.BASE_URL}flights/images/flexpay-logo.webp`}
                 alt=""
                 width="150px"
                 height="50px"
@@ -247,11 +247,11 @@ const Home = () => {
             </div>
             <div className="good-card-2 col flex-mine-column px-5  text-center">
               <img
-                src="/images/customer-icon.webp"
-                alt=""
-                width="50px"
-                height="50px"
-              />
+  src={`${import.meta.env.BASE_URL}flights/images/customer-icon.webp`}
+  alt=""
+  width="50"
+  height="50"
+/>
               <h3 className="mt-10">Customer Support</h3>
               <p className="mt-10">
                 Happy to help our customers with queries round the clock
@@ -259,7 +259,7 @@ const Home = () => {
             </div>
             <div className="good-card-3 col flex-mine-column px-5 text-center">
               <img
-                src="/images/happy-cutomer.svg"
+                src={`${import.meta.env.BASE_URL}flights/images/happy-cutomer.svg`}
                 alt=""
                 width="50px"
                 height="50px"
@@ -318,7 +318,7 @@ const Home = () => {
 
           <div className="section4-banner">
             <div className="flex-mine section4-banner-img">
-              <img src="/images/airplane.png" alt="" width="220px" />
+              <img src={`${import.meta.env.BASE_URL}flights/images/airplane.png`} alt="" width="220px" />
             </div>
             <div className="section4-banner-text">
               <h1>Heavily Discounted Fares!!</h1>
@@ -386,13 +386,13 @@ const Home = () => {
           <h1>Customers Review</h1>
           <div className="flex-mine section7-favicon ">
             <img
-              src="/images/tp-logo.webp"
+              src={`${import.meta.env.BASE_URL}flights/images/tp-logo.webp`}
               alt=""
               width="150px"
               height="30px"
             />
             <img
-              src="/images/stars-4.5.svg"
+              src={`${import.meta.env.BASE_URL}flights/images/stars-4.5.svg`}
               alt=""
               width="150px"
               height="30px"
